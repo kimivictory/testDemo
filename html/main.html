@@ -1,0 +1,58 @@
+<!--main.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kababoo</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/config.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <ul>
+            <li id="title">Kababoo</li>
+            <li id="main">主页面</li>
+            <li id="form"></li>
+            <li id="username">Kimi_11212212</li>
+        </ul>
+    </div>
+    <div id="tip">
+        <button class="person" onclick="backToPerson()">个人界面</button>
+        <button class="logout" onclick="logout()">退出登录</button>
+    </div>
+    <div id="content">
+        <div id="box">
+
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>s
+
+        <div id="comment">
+            <div id="comment-container">
+                <textarea name="text" id="text" cols="80" rows="3" placeholder="留下你的话"></textarea>
+                <button class="submit" onclick="sendText()">发表留言</button>
+                <!--<button class="select">查看留言</button>-->
+                <div id="warn"></div>
+            </div>
+        </div>
+        <div id="information"></div>
+        <div id="update-container"><textarea name="" id="utext" cols="30" rows="80" placeholder="修改你的留言"></textarea><br/>
+            <button onclick="updateText()">确认修改</button>
+            <button onclick="hideUTextarea()">取消修改</button>
+            <span id="floor"></span>
+            <span id="uWarn"></span>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+<script src="../js/main.js"></script>
+
+
+</html>

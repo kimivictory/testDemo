@@ -1,0 +1,40 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kababoo index</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/index.js" ></script>
+    <script src="../js/config.js"></script>
+    
+</head>
+<body>
+    <h1 >Kababoo</h1>
+    
+    <div id="form">
+        
+        <div class="registerPage" style="position: relative; left: 47%;">注册</div><br/>
+        <p style="position: relative; left: 27%;">
+            <span style="position: relative; left: 30px;"> 用户名<input type="text" name="" id="username" placeholder="请输入用户名" onkeyup="check()" value="Kimi_1"><span id="userWarn" class="registerPage"></span></span><br/>
+            <span style="position: relative; left: 60px;"> 密码<input type="password" name="" id="password" class="loginPage" placeholder="请输入密码"><input type="text" name="" id="password1" class="registerPage" placeholder="请输入密码" onkeyup="check()" value="Kimi00"><span id="passwordWarn1" class="registerPage"></span></span><br/>
+            <span class="registerPage"> 确认密码<input type="text" name="" id="password2" class="" placeholder="请再次输入密码" onkeyup="check()" value="Kimi00"></span><span id="passwordWarn2" class="registerPage"></span>
+        </p>
+        <br/>
+        <div style="letter-spacing: 20px; position: relative; left: 43%;">
+            <button onclick="onLogin()" class="loginPage">登录</button>
+            <button onclick="jumpToRegister()" class="loginPage">注册</button>
+            <button onclick="onRegister()" class="registerPage">注册</button>
+            <button onclick="jumpToLogin()" class="registerPage" id="back">返回</button>
+        </div>
+        <div id="registerWarn" ></div>
+        <br/>
+
+    </div>
+    <img src="../img/wing1.gif" alt="wing1" id="wing1" class="loginPage">
+    <img src="../img/wing2.gif" alt="wing2" id="wing2" class="loginPage">
+    <div class="loading">请尽情等待.....</div>
+</body>
+</html>

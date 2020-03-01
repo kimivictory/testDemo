@@ -1,0 +1,41 @@
+<!--person.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kababoo</title>
+    <link rel="stylesheet" href="../css/person.css">
+    <script src="../js/config.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <ul>
+            <li id="title">Kababoo</li>
+            <li id="main" onclick="backToMain()">主页面</li>
+            <li id="form"></li>
+            <li id="username">Kimi_1</li>
+        </ul>
+    </div>
+    <div id="detail">
+        <div>昵称&nbsp;<input type="text" name="" id="name" value=""></div>
+        <span>年龄&nbsp;<input type="text" name="" id="age" value="" placeholder="请输入1-100之间的数值" onkeyup="checkAge()"></span><span id="awarn"></span>
+        <div>性别&nbsp;<select name="" id="gender">
+                <option value="--" selected="selected">--</option>
+                <option value="男">男</option>
+                <option value="女">女</option>
+            </select>
+        </div><br><br><br>
+        <button id="set" onclick="sendPerson()">保存设置</button>
+        <div id="warn"></div>
+
+    </div>
+</body>
+<script src="../js/person.js"></script>
+<script>
+</script>
+
+</html>
